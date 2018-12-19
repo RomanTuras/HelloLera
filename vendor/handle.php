@@ -20,15 +20,11 @@ class Handle{
         $text = $response['message']['text'];
         switch ($text){
             case "/alientest":
-                if($alien_test->isTestStarted($chat_id) == false){
-                    //begin the test
-                    $alien_test->prepareTest();
-                    $alien_test->sendWelcome($chat_id);
-                } else //test already started
+                $alien_test->initAlienTest($chat_id);
                 break;
             default:
-                $send = new Send();
-                $send->message(TG_LINK, $chat_id, WELCOME_MSG, null);
+//                $send = new Send();
+//                $send->message(TG_LINK, $chat_id, WELCOME_MSG, null);
         }
     }
 
