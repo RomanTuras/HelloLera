@@ -3,6 +3,7 @@
 /**
  * Send different data through API Telegram
  */
+
 class Send{
 	
 	function __construct(){}
@@ -10,10 +11,10 @@ class Send{
 
 	/**
 	 * Sending message
-	 * @param  [type] $link         link to API Telegram + token
-	 * @param  [type] $chat_id      Unique identifier for the target chat or username of the target channel (in the format @channelusername)
-	 * @param  [type] $text         some text to be sending
-	 * @param  [type] $reply_markup [optional] Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user.
+	 * @param  string $link         link to API Telegram + token
+	 * @param  int $chat_id      Unique identifier for the target chat or username of the target channel (in the format @channelusername)
+	 * @param  string $text         some text to be sending
+	 * @param  object $reply_markup [optional] Additional interface options. A JSON-serialized object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user.
 	 */
 	function message($link, $chat_id, $text, $reply_markup){
 		$parameter = array(
@@ -28,10 +29,10 @@ class Send{
 
 	/**
 	 * Sending photo
-	 * @param  [type] $link    link to API Telegram + token
-	 * @param  [type] $chat_id Unique identifier for the target chat or username of the target channel (in the format @channelusername)
-	 * @param  [type] $caption [optional] Photo caption (may also be used when resending photos by file_id), 0-1024 characters
-	 * @param  [type] $photo   URL of the photo to be send
+	 * @param  string $link    link to API Telegram + token
+	 * @param  int $chat_id Unique identifier for the target chat or username of the target channel (in the format @channelusername)
+	 * @param  string $caption [optional] Photo caption (may also be used when resending photos by file_id), 0-1024 characters
+	 * @param  string $photo   URL of the photo to be send
 	 */
 	function photo($link, $chat_id, $caption, $photo){
 		$parameter = array(

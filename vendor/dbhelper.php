@@ -4,12 +4,10 @@
  * ### HelloLera Telegram Bot ###
  * A class file to connect to database
  */
+
 class DbHelper {
 
-    // constructor
     function __construct() {}
- 
-    // destructor
     function __destruct() {}
 
     /**
@@ -17,7 +15,7 @@ class DbHelper {
      * @return mysqli cursor
      */
     function connect() {
-        require_once __DIR__ . 'config.php';
+        require_once __DIR__ . '/../config.php';
         $link = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_DATABASE);
         if (!$link) {
 //            echo "Error: Unable to connect to MySQL." . PHP_EOL;
@@ -29,7 +27,16 @@ class DbHelper {
         return $link;
     }
 
-    function createTable($conn){
-        
+    function createAlienTable($con){
+        $sql = "CREATE TABLE IF NOT EXISTS alien_table (
+        id int NOT NULL AUTO_INCREMENT,
+        chat_id int DEFAULT 0,
+        username varchar(50),
+        question int DEFAULT 0,
+        alien int DEFAULT 0,
+        human int DEFAULT 0,
+        PRIMARY KEY (id)
+        );";
+        $con->query($sql);
     }
 }
