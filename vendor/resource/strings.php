@@ -11,4 +11,12 @@ define('WELCOME_MSG', '👽 Alien test 👽
 define('INPUT_YOUR_NAME', 'Введите Ваше имя:');
 define('ARE_YOUR_NAME', 'Ваше имя ');
 
+define('SO', 'Итак, ');
+define('TASK', 'Вопрос ');
+define('FROM', ' из ');
+
+
+
+
+
 

@@ -40,6 +40,7 @@ class Questionnaire{
      * @return mixed|null [String]  - question (text), or null - if number out of range
      */
 	function getQuestion($number){
+	    $number = $number - 1;
 		if($number > (sizeof($this->questions) - 1)) return null;
 		else return $this->questions[$number];
 	}
@@ -50,6 +51,7 @@ class Questionnaire{
      * @return int|mixed [int]  - answer, or '-1' - if number out of range
      */
 	function getAnswer($number){
+        $number = $number - 1;
 		if($number > (sizeof($this->questions) - 1)) return -1;
 		else return $this->answers[$number];
 	}

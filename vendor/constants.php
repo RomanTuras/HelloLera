@@ -5,6 +5,7 @@
  */
 
 //init alien test section
-define('CONFIRM_NAME', -1);
-define('NOT_CONFIRM_NAME', -2);
+define('CONFIRM_NAME', 'CONFIRM_NAME');
+define('NOT_CONFIRM_NAME', 'NOT_CONFIRM_NAME');
 
+define('WAIT_NAME', 'WAIT_NAME');
