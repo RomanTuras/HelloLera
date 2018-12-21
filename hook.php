@@ -4,7 +4,6 @@
  */
 
 require_once __DIR__ . '/vendor/handle.php';
-require_once __DIR__ . '/vendor/send.php';
 
 $get_update = file_get_contents('php://input');
 $response = json_decode($get_update, true);
