@@ -5,7 +5,7 @@
 _Main notes:_
 - place the bot code only on the https domain;
 - register bot with the BotFather;
-- register webhook https://api.telegram.org/bot\<token\>/setWebhook?url=https:path_to_webhook_file.php
+- register webhook https://api.telegram.org/bot+token/setWebhook?url=https:path_to_webhook_file.php
 - full information: https://core.telegram.org/bots/api/
 
 _Commands of this bot_
