@@ -1,10 +1,9 @@
 <?php
- 
-/**
- * ### HelloLera Telegram Bot ###
- * A class file to connect to database
- */
 
+/**
+ * Class DbHelper
+ * Work with database
+ */
 class DbHelper {
     private $con; //link to mysqli connection
 
