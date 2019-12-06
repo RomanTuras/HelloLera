@@ -18,8 +18,10 @@ _Used features:_
 - processing a commands;
 - working with mySql database
 
-_First Screen:_
+**First Screen:**
+
 ![hello-lera-1](https://user-images.githubusercontent.com/13946156/70307995-0d038080-1813-11ea-8830-649065fa6dc1.png)
 
-_Last Screen:_
+**Last Screen:**
+
 ![hello-lera-2](https://user-images.githubusercontent.com/13946156/70308008-12f96180-1813-11ea-8791-81f1d713cdba.png)
